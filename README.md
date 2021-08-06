@@ -1,7 +1,46 @@
 # qbittorrent_auto_management
-Automatically manage qbittorrent rss, download, and delete torrents.
+Automatically manage qbittorrent rss, download, and delete torrents. (Under windows)
 
-Need to work with rclone.
+Need to work with rclone and [qbittorrent-cli](https://github.com/fedarovich/qbittorrent-cli).
+
+
+
+### Usage
+
+**Install rclone,  Cmder, qbittorrent-cli and python3**
+
+- Install and add rclone into your path
+- Install python3 and make sure it's in your path
+- Install [qbittorrent-cli](https://github.com/fedarovich/qbittorrent-cli/releases) and add it into your path
+- Install Cmder
+- Config your Google Drive account in rclone and make sure it's called `gd`
+- Put `rss.sh` and `qbit_auto.py` into the same folder
+
+
+
+**Config parameters**
+
+In `qbit_auto.py`, 
+
+	- line 15, config your qBittorrent webui password
+	- line 16, config your server url (127.0.0.1 if local)
+
+In `rss.sh`
+
+- line 1, config the folder you want to upload
+- (line 11, by default, the folder will be uploaded into gd:RSS)
+
+
+
+**Run:**
+
+In cmder, run
+
+```shell
+./rss.sh
+```
+
+That's all.
 
 
 
