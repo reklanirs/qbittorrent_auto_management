@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 from dateutil import tz
 
 '''
-qbt server info --username admin --password <password> --url http://sys.kanon.dev:8080
+qbt server info --username admin --password <password> --url <server_url>
 '''
 # darwin / win32
 password = 123456
